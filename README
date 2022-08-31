@@ -1,3 +1,14 @@
+
+## 测试环境 centos7
+### 安装openssl  openssl-devel
+ yum  install  openssl openssl-devel 
+ 版本：OpenSSL 1.0.2k-fips  26 Jan 2017
+ 
+ 按以下步骤可以正常编译通过
+ 注意：make使用多线程会报错
+
+
+
 Instructions how to compile and use C++ RTMP Server (a.k.a crtmpserver)
 
 Requirements:
