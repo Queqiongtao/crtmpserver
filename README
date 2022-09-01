@@ -7,7 +7,9 @@
  按以下步骤可以正常编译通过
  注意：make使用多线程会报错
 
-
+cmake添加调试加上 -g
+SET(CMAKE_CXX_FLAGS_DEBUG "-g -O0 -DWITH_SANITY_INPUT_BUFFER -DVALIDATE_FROMAT_SPECIFIERS -Wformat=2")
+SET(CMAKE_CXX_FLAGS_RELEASE "-g -O0 ${FVISIBILITY} -fno-strict-aliasing -DSHORT_PATH_IN_LOGGER=${ABSOLUTE_ROOT_PATH_LENGTH}")
 
 Instructions how to compile and use C++ RTMP Server (a.k.a crtmpserver)
 
